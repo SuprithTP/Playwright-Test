@@ -56,7 +56,7 @@ test('Handling Frame', async ({page}) =>{
     var frame1 = await page.frame({url : 'https://ui.vision/demo/webtest/frames/frame_2.html'})
     await frame1.fill("//input[@name='mytext2']", "Hello")
 
-
+  
     // var frame2 = await page.frame("mytext4")
     // await frame2.fill("//input[@name='mytext4']", "I am Suprith")
 
