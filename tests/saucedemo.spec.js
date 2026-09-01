@@ -78,3 +78,13 @@ test("Dropdowns", async({page}) => {
     await page.selectOption("//div[contains(@class, 'single_tab_div')]//select", 'India')
     await page.waitForTimeout(4000)
 })
+
+
+
+
+
+
+
+
+
+
