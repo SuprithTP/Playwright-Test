@@ -88,4 +88,10 @@ await page.waitForTimeout(5000)
 // await page.locator("//div[.='Suprith T P (BLR TT)']/parent::div").click()
 
 })
-    
+test("Dropdowns", async({page}) => {
+    await page.goto("https://www.globalsqa.com/demo-site/select-dropdown-menu/")
+    await page.selectOption("//div[contains(@class, 'single_tab_div')]//select", 'India')
+    await page.waitForTimeout(4000)
+})
+
+
