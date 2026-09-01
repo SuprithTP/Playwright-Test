@@ -79,6 +79,13 @@ var arrOfRequiredProducts = ['Sauce Labs Backpack', 'Sauce Labs Bike Light', 'Sa
 //     await page.waitForTimeout(4000)
 // })
 
-test("Navigatoin to polaris", async(page) =>{
+test("Navigatoin to polaris", async({page}) =>{
 await page.goto("https://drnaverdsee5s.cloudfront.net/dashboard/")
+await page.waitForLoadState()
+// await page.locator("(//button[.='Sign in with Microsoft'])[1]").click()
+await page.locator("//button[.='Sign in with Microsoft']").first().click()
+await page.waitForTimeout(5000)
+// await page.locator("//div[.='Suprith T P (BLR TT)']/parent::div").click()
+
 })
+    
